@@ -1,3 +1,4 @@
 {
-  "WATCH_BRANCHS": ["develop", "feature/subscription-integration"]
+  "WATCH_BRANCHS": ["develop", "feature/subscription-integration"],
+  "FILENAME": "script.sh"
 }
