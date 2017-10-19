@@ -1,16 +1,27 @@
 {
   "name": "ci-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Squad CI server project",
   "main": "./lib/ci.js",
   "scripts": {
     "lint": "",
     "start": ""
   },
-  "author": "",
+  "author": {
+    "name": "Santhosh Raju",
+    "email": "santhoshraju.ai@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "github-webhook-handler": "^0.6.0",
     "shelljs": "^0.7.8"
+  },
+  "bugs": {
+    "url": "https://github.com/SanthoshRaju91/ci-server",
+    "email": "santhoshraju.ai@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanthoshRaju91/ci-server.git"
   }
 }
