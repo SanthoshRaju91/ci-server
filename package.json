@@ -1,5 +1,5 @@
 {
-  "name": "squad-ci-server",
+  "name": "ci-server",
   "version": "1.0.0",
   "description": "Squad CI server project",
   "main": "./lib/ci.js",

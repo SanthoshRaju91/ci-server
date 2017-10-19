@@ -1,4 +1,4 @@
-import CI from '../lib/ci';
+import CI from 'ci-server';
 
 const WEBHOOK_PATH = '/webhook';
 const SECRET = 'secret';
