@@ -27,7 +27,7 @@ Once your installed the `ci-server` node module, there is a few configurations w
 
 3. Instantiating the CI server instance. Once the above configurations are done. You need to instantiate and ci, which exposes few methods for your use, as below.
 
-```javascript 
+```javascript
   const CI = require('ci-server');
 
   const config = {
@@ -73,8 +73,8 @@ The second callback takes two parameters, where
 
 - second parameter is given on deployment success, this is an Object having properties from
 
-path - The provided Build path
-branch - The branch is it deployed from.
-payload - The github payload, this is useful as this provides information on the committer, branch, the commit ID.
+- path - The provided Build path
+- branch - The branch is it deployed from.
+- payload - The github payload, this is useful as this provides information on the committer, branch, the commit ID.
 
 You can use this object for referential / logging purpose.
