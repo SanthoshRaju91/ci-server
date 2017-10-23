@@ -78,3 +78,32 @@ The second callback takes two parameters, where
 - payload - The github payload, this is useful as this provides information on the committer, branch, the commit ID.
 
 You can use this object for referential / logging purpose.
+
+
+## Creating webhook for your project
+
+Follow the below steps to create a webook for project repo.
+
+1. Click on the settings tab of your project repo.
+
+2. On side navigation panel click on webhook.
+
+3. For webhook URL path, provide your CI server running instance eg. http://10.23.45.67:7777/webhook. The IP address changes, based on where you are running the ci server project.
+
+4. Provide the secret key. Please note this would be you secret key that you would provide as a config for creating the ci server instance.
+
+5. Select the events which you want the webhook to emit (For the sake of this project, we are only interested in push events)
+
+6. Save the webhook.
+
+
+NOTE: If you don't have a server and you are curious to see what this project can do. start the project on you local machine. By this we are running the project on localhost:7777/webhook. Now you need to expose it to the internet.
+
+There are many ways, but we will use something simpler, using ngrok. run the ngrok command as `ngrok http 7777`
+
+This opens up you server and be accessed publicly, now copy the random address it generates and pate it in the webhook URL path with the namespace.
+
+That's it you now have a CI serve, which is more controllable because you are giving it instructions to perform for every CI build.
+
+
+If you like this, please spread the word out. If you find an issue, raise a bug which I will be more happy to resolve. Because that is the only way you would help me learn.
