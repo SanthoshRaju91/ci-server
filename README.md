@@ -27,7 +27,7 @@ Once your installed the `ci-server` node module, there is a few configurations w
 
 3. Instantiating the CI server instance. Once the above configurations are done. You need to instantiate and ci, which exposes few methods for your use, as below.
 
-`
+``` 
   const CI = require('ci-server');
 
   const config = {
@@ -47,7 +47,7 @@ Once your installed the `ci-server` node module, there is a few configurations w
     }
   }, function deploymentCB(err, deploymenstStatus));
 
-`
+```
 
 WEBHOOK_PATH - GITHUB webhook namespace, for the events to be received and perform the build activities
 
@@ -58,7 +58,7 @@ BUILD_PATH - Your project workspace on the server.
 PORT - (Optional) Port on which the CI server would be instantiated and run. (Default PORT - 7777)
 
 
-start() - This is the API function exposed, when you create a CI instance by calling new CI(). This takes two callbacks, where
+`start()` - This is the API function exposed, when you create a CI instance by calling new CI(). This takes two callbacks, where
 
 - the first callback is the instance callback which is executed when the server is started.
 
