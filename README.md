@@ -21,7 +21,7 @@ The package is available on the npm registry and you can install it using npm / 
 
 Once your installed the `ci-server` node module, there is a few configurations which the module expects.
 
-1. config.json - Is a configuration JSON telling the which branch's should the CI build trigger and specify the script filename.
+1. `config.json` - Is a configuration JSON telling the which branch's should the CI build trigger and specify the script filename.
 
 2. script file - This is basic shell script file, having the build instructions to be executed on a build instance.
 
