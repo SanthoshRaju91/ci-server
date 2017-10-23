@@ -27,7 +27,7 @@ Once your installed the `ci-server` node module, there is a few configurations w
 
 3. Instantiating the CI server instance. Once the above configurations are done. You need to instantiate and ci, which exposes few methods for your use, as below.
 
-``` 
+```javascript 
   const CI = require('ci-server');
 
   const config = {
