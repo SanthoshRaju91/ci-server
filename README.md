@@ -85,6 +85,8 @@ You can use this object for referential / logging purpose.
 Follow the below steps to create a webook for project repo.
 
 1. Click on the settings tab of your project repo.
+    
+   ![Settings Settings Screen](/docs/settings.png)
 
 2. On side navigation panel click on webhook.
 
