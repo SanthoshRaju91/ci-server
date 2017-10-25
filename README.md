@@ -90,11 +90,13 @@ Follow the below steps to create a webook for project repo.
 
 3. For webhook URL path, provide your CI server running instance eg. http://10.23.45.67:7777/webhook. The IP address changes, based on where you are running the ci server project.
 
-4. Provide the secret key. Please note this would be you secret key that you would provide as a config for creating the ci server instance.
+4. Select content-type as application/json from the dropdown.
 
-5. Select the events which you want the webhook to emit (For the sake of this project, we are only interested in push events)
+5. Provide the secret key. Please note this would be you secret key that you would provide as a config for creating the ci server instance.
 
-6. Save the webhook.
+6. Select the events which you want the webhook to emit (For the sake of this project, we are only interested in push events)
+
+7. Save the webhook.
 
 
 NOTE: If you don't have a server and you are curious to see what this project can do. start the project on you local machine. By this we are running the project on localhost:7777/webhook. Now you need to expose it to the internet.
