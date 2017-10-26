@@ -107,7 +107,7 @@ Follow the below steps to create a webook for project repo.
 
    ![webhook Webhook form filled Screen](/docs/webhook-form-filled.png)
    
-   
+  
 
 7. Save the webhook.
 
