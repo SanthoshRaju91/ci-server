@@ -2,13 +2,13 @@
 
 ## Motivation
 
-This is a experimental project, which I thought of and solve my organization's automate build system for most of our UI projects.
+This is a experimental project, which I started to have automate build system for most of our UI projects in our organization.
 
-But this turned out to be one of the useful projects that I have ever thought of. This is basic projection of what Travis-ci.org offers. This is not a complete implementation / projection of Travis-ci (which is my ultimate goal of this project completion and gracefully present it back to the community which I love so much).
+But this turned out to be one of the best projects that I have ever thought of. This is a basic projection of what Travis-ci.org offers. This is not a complete implementation / projection of Travis-ci (which is my ultimate goal of this project completion and gracefully present it back to the community which I love so much).
 
 ## Introduction
 
-The CI Server is tiny node module, which helps you build a CI server of your own with your own instruction, and this is implemented to work with github, using github's webhook events.
+The CI Server is tiny node module, which helps you build a CI server of your own with your own instruction, and this is implemented to work with any SCM system which supports webhooks.
 
 ## Installation
 
@@ -116,7 +116,9 @@ Follow the below steps to create a webook for project repo.
 
 NOTE: If you don't have a server and you are curious to see what this project can do. start the project on you local machine. By this we are running the project on localhost:7777/webhook. Now you need to expose it to the internet.
 
-There are many ways, but we will use something simpler, using ngrok. run the ngrok command as `ngrok http 7777`
+There are many ways, but we will use something simpler, using ngrok. [which you can download here](https://ngrok.com/). 
+
+Run the ngrok command as `ngrok http 7777`
 
 This opens up you server and be accessed publicly, now copy the random address it generates and pate it in the webhook URL path with the namespace.
 
