@@ -23,7 +23,14 @@ Once your installed the `ci-server` node module, there is a few configurations w
 
 1. `config.json` - Is a configuration JSON telling the which branch's should the CI build trigger and specify the script filename.
 
-2. script file - This is basic shell script file, having the build instructions to be executed on a build instance.
+  ```JSON
+    {
+      "WATCH_BRANCHS": ["develop", "feature/subscription-integration"],
+      "FILENAME": "script.sh"
+    }  
+  ```
+
+2. script file - This is basic shell script file, having the build instructions to be executed on a build instance. In your script file, by default the first argument is the branch which triggered the build, you can access it with ```unix $1```.
 
 3. Instantiating the CI server instance. Once the above configurations are done. You need to instantiate and ci, which exposes few methods for your use, as below.
 
@@ -85,9 +92,9 @@ You can use this object for referential / logging purpose.
 Follow the below steps to create a webook for project repo.
 
 1. Click on the settings tab of your project repo.
-    
+
    ![Settings Settings Screen](/docs/settings.png)
-   
+
 
 2. On side navigation panel click on webhook.
 
@@ -106,17 +113,17 @@ Follow the below steps to create a webook for project repo.
 
 
    ![webhook Webhook form filled Screen](/docs/webhook-form-filled.png)
-   
-  
+
+
 
 7. Save the webhook.
 
 
-
+---
 
 NOTE: If you don't have a server and you are curious to see what this project can do. start the project on you local machine. By this we are running the project on localhost:7777/webhook. Now you need to expose it to the internet.
 
-There are many ways, but we will use something simpler, using ngrok. [which you can download here](https://ngrok.com/). 
+There are many ways, but we will use something simpler, using ngrok. [which you can download here](https://ngrok.com/).
 
 Run the ngrok command as `ngrok http 7777`
 
