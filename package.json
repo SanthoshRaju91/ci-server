@@ -1,6 +1,6 @@
 {
   "name": "ci-server",
-  "version": "1.3.0",
+  "version": "1.0.0",
   "description": "Personal CI Server node module",
   "main": "./lib/ci.js",
   "scripts": {
