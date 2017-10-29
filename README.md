@@ -30,7 +30,7 @@ Once your installed the `ci-server` node module, there is a few configurations w
     }  
   ```
 
-2. script file - This is basic shell script file, having the build instructions to be executed on a build instance. In your script file, by default the first argument is the branch which triggered the build, you can access it with ```unix $1```.
+2. script file - This is basic shell script file, having the build instructions to be executed on a build instance. In your script file, by default the first argument is the branch which triggered the build, you can access it with ` $1`.
 
 3. Instantiating the CI server instance. Once the above configurations are done. You need to instantiate and ci, which exposes few methods for your use, as below.
 
